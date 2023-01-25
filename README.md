@@ -21,6 +21,6 @@ Da das Keypad 3x4 variierende Werte zurückgibt, habe ich zwei Arrays initialisi
 Der erste Zustand GENERATING ist das Generieren und nacheinander Darstellen der ersten zu merkenden Zahlenfolge. Danach geht das Programm in den 
 Zustand EXPECTING, wo es die Eingabe des Benutzers erwartet. Die Eingaben werden nach jeder einzeln eingegebenen im Zustand CHECK überprüft.
 Bei richtiger Eingabe, wird einfach wieder der Zustand EXPECTING gewählt, wobei bei falscher Eingabe direkt ausgegeben wird, dass die Eingabe
-falsch war und der Zustand LOSS aufgerufen wird. Der Zustand LOSS displayt das Level, bei welchem man gescheitert ist und den Score. Anschliessend
-wird der Zustand NEWGAME aufgerufen, wo man das Spiel neustarten kann und alle Variabeln zurückgesetzt wird. Wenn man das 20igste Level geschafft
-hat (was sehr unwahrscheinlich ist), wird gratuliert und man kann das Spiel neustarten.
+falsch war und der Zustand LOSS aufgerufen wird. Der Zustand LOSS displayt das Level, bei welchem man gescheitert ist und den Score. 
+Anschliessend wird der Zustand NEWGAME aufgerufen, wo man das Spiel neustarten kann und alle Variabeln zurückgesetzt wird. Wenn alle Zahlen des 
+Levels richtig eingegeben wurde, wechselt das Programm zum Zustand WIN, wo gratuliert und das neue Level durch den Zustand GENERATING gestartet wird. Wenn man das 20igste Level geschafft hat (was sehr unwahrscheinlich ist), wird gratuliert und man kann das Spiel neustarten.
